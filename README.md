@@ -1,3 +1,5 @@
+
+<--
 # 3lo
 #026380 niebieski
 #ffc011 żółty
@@ -34,3 +36,4 @@ class RegisterForm(UserCreationForm):
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+-->
