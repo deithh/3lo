@@ -1,12 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 
 body {
-    background-color: #026380;
+    background: radial-gradient(circle, rgba(2,99,128,1) 0%, rgba(0,40,52,1) 100%);
     color: #fffdfc;
     font-family: Alata, Arial, Helvetica, sans-serif;
+}
+
+.main{
+    height: 100vh;
+    /*border: 10px solid #fffdfc;
+    border-radius: 5px;*/
 }
 
 input {
@@ -29,20 +37,25 @@ select:focus {
     outline: none;
 }
 option {
-    border-radius: 5px;
+    font-family: Alata, Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 #button1 {
     border: none;
     background-color: #d19900;
     color: #fffdfc;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Alata, Arial, Helvetica, sans-serif;
-    padding: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 5px;
     transition:background-color 0.1s;
+    display: inline;
+    right:0%;
+    width: 100%;
+    margin: auto;
 }
 #button1:hover{
     background-color: #f0bd32;
@@ -57,26 +70,85 @@ option {
     border: 5px solid #fffdfc;
     border-radius: 5px;
     padding: 10px;
-    width: 60%;
+    width: 97.80%;
     display: inline-block;
     margin:20px;
+    height: 10vh;
+    background: #026380;
     
 }
 #content{
-    width: 60%;
+    top:0%;
+    margin: auto;
+    width: 97.80%;
     border: 5px solid #fffdfc;
     border-radius: 5px;
     padding: 10px;
     display: inline-block;
     margin:20px;
+    font-size: 2em;
+    margin:20px;
+    background: #026380;
 
 }
 #ads{
-    width:33%;
+    height: 10vh;
+    width:25%;
     border: 5px solid #fffdfc;
     border-radius: 5px;
     padding: 10px;
     position: relative;
     display: inline-block;
     
+    
+}
+#id_wiadomość{
+    width: 100%;
+    height: 8rem;
+    padding:5px;
+    border: 2px solid  #fffdfc;
+    border-radius: 5px;
+    color:  #fffdfc;
+    background-color: transparent;
+    font-family: Alata, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    resize: none;
+    margin:0px;
+    transition: 0.3s;
+    
+    
+    
+}
+#id_wiadomość:focus {
+    outline:  none;
+    border: 2px solid  #f0bd32;
+
+}
+#id_wiadomość::placeholder {
+    color:  #e4e4e4;
+}
+#id_email{
+    display: inline-block;
+    font-family: Alata, Arial, Helvetica, sans-serif;
+    outline:  none;
+    background-color: transparent;
+    color:#fffdfc;
+    font-size: 15px;
+    border: 2px solid #fffdfc;
+    align-items: center;
+    label{
+        padding:2px;
+    }
+    
+}
+#id_płeć{
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid  #fffdfc;
+    font-size: 15px;
+    color:  #fffdfc;
+    font-family: Alata, Arial, Helvetica, sans-serif;
+    label{
+        padding: 2px;
+    }
 }

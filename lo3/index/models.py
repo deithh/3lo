@@ -10,7 +10,7 @@ from django.contrib.auth.models import User
     Od_Spottera = 'Od Spottera'
     Od_Spotterki = 'Od Spotterki'"""
 class ContactForm(models.Model):
-    wiadomość = models.CharField(max_length=500) ##niepotrzebna klasa meta
+    wiadomość = models.TextField(max_length=500) ##niepotrzebna klasa meta
     spotter = [
         ('Od_Spottera', 'Od Spottera'),
         ('Od_Spotterki','Od Spotterki'),
