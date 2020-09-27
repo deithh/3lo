@@ -5,7 +5,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 # Create your models here.
 class ContactForm(models.Model):
-    content = models.CharField(max_length=500)
+    content = models.CharField(max_length=500) ##niepotrzebna klasa meta
     email = models.EmailField()
     sex = models.BooleanField()
 class spotted(ModelForm):
