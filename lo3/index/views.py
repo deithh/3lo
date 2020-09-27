@@ -5,19 +5,23 @@ from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.contrib import messages
-
+from .models import ContactForm
+from .models import spotted
+from django.http import HttpResponse
 
 
 # Create your views here.
- 
+def wysłano(request):
+    return HttpResponse("wysłano")
 def index(request): 
     
-    from .models import spotted
+   
     if request.method == 'POST':
-        form = spotted(request, request.POST)
+        form = spotted(request.POST)
         if form.is_valid():
+            form.save()
             
-            return redirect(reverse('login:index'))
+            return redirect(reverse('index:index'))
 
     kontekst = {'form': spotted()}
     
