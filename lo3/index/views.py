@@ -7,8 +7,18 @@ from django.urls import reverse
 from django.contrib import messages
 
 
-from .forms import RegisterForm
-# Create your views here.
 
+# Create your views here.
+ 
 def index(request): 
-    return render(request, "index/index.html",)
+    
+    from .models import spotted
+    if request.method == 'POST':
+        form = spotted(request, request.POST)
+        if form.is_valid():
+            
+            return redirect(reverse('login:index'))
+
+    kontekst = {'form': spotted()}
+    
+    return render(request, "index.html", kontekst)

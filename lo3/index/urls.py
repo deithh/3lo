@@ -4,6 +4,6 @@ from django.contrib import admin
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic.edit import CreateView
 
-app_name = 'login'  # przestrzeń nazw aplikacji
+app_name = 'index'  # przestrzeń nazw aplikacji
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', views.index, name='index'),]

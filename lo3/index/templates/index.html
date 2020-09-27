@@ -1,0 +1,28 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="{% static '../static/script.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static '../static/styles.css' %}">
+  <title>Spotted 3LO konin</title>
+</head>
+<body>
+  <h1>first site</h1>
+    {{form}}
+  <form action="" id="form1">
+        <label for="">
+            <p>OD SPOTERA</p>
+            <input type="checkbox" name="spotter" id="spotter">
+            <p>OD SPOTERKI</p>
+            <input type="checkbox" name="spotterka" id="spotter">
+        </label>
+        <br>
+        <input type="email" name="email" id="email">
+        <br>
+        <input type="text" name="message" id="message">
+  </form>
+    <button type="submit" form="form1" value="Submit">Wyślij</button>
+</body>
+</html>
