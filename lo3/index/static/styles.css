@@ -66,13 +66,13 @@ option {
 }
 #header{
     top:0%;
-    left:5%;
+    
     border: 5px solid #fffdfc;
     border-radius: 5px;
     padding: 10px;
-    width: 97.80%;
+    width: 98%;
     display: inline-block;
-    margin:20px;
+    margin:1%;
     height: 10vh;
     background: #026380;
     
@@ -80,14 +80,14 @@ option {
 #content{
     top:0%;
     margin: auto;
-    width: 97.80%;
+    width: 98%;
     border: 5px solid #fffdfc;
     border-radius: 5px;
     padding: 10px;
     display: inline-block;
-    margin:20px;
+    
     font-size: 2em;
-    margin:20px;
+    margin:1%;
     background: #026380;
 
 }

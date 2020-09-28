@@ -6,4 +6,7 @@ from django.views.generic.edit import CreateView
 
 app_name = 'index'  # przestrzeń nazw aplikacji
 urlpatterns = [
-    url(r'^$', views.index, name='index'),]
+    url(r'^$', views.index, name='index'),
+    url(r'^after', views.after, name='after'),
+
+]

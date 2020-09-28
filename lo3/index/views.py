@@ -11,8 +11,8 @@ from django.http import HttpResponse
 
 
 # Create your views here.
-def wysłano(request):
-    return HttpResponse("wysłano")
+def after(request):
+    return render(request, "after.html")
 def index(request): 
     
    
@@ -20,8 +20,7 @@ def index(request):
         form = spotted(request.POST)
         if form.is_valid():
             form.save()
-            
-            return redirect(reverse('index:index'))
+            return redirect('index:after')
 
     kontekst = {'form': spotted()}
     

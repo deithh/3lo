@@ -1,0 +1,28 @@
+h1{
+    top: 50%;
+    right: 50%;
+    
+    color:#fffdfd;
+    position: absolute;
+    transform: translate(50%, -50%);
+    
+    
+}
+body {
+    background: radial-gradient(circle, rgba(2,99,128,1) 0%, rgba(0,40,52,1) 100%);
+    color: #fffdfc;
+    font-family: Alata, Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#container{
+    
+    
+    
+}
