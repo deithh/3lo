@@ -15,12 +15,11 @@ class ContactForm(models.Model):
         ('Od_Spottera', 'Od Spottera'),
         ('Od_Spotterki','Od Spotterki'),
     ]
-    email = models.EmailField()
     płeć = models.CharField(choices=spotter, max_length=500)
     
 
 class spotted(ModelForm):
     class Meta:
         model= ContactForm
-        fields = ['wiadomość', 'email', 'płeć']
+        fields = ['wiadomość', 'płeć']
     

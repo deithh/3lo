@@ -2,12 +2,20 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="{% static '../static/stylesafter.css' %}">  
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alata&subset=latin,latin-ext">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alata&subset=latin,latin-ext">
+  <script async src="{% static '../static/afterscript.js' %}"></script>
 </head>
 <body>
-<div id="container">
-<h1>Wysłano wiadomość!</h1>
+  
+<div id="pop_up">
+  <div id="h1">
+<h1>Wysłano wiadomość!</h1></br>
+<a  href="{% url 'index:index' %}"><img id="arrow" src="{% static '../static/arrow.png' %} " height="200" width="200"></a>
 </div>
+
+
+</div>
+
     
     
     

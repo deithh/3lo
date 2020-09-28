@@ -6,7 +6,7 @@
 }
 
 body {
-    background: radial-gradient(circle, rgba(2,99,128,1) 0%, rgba(0,40,52,1) 100%);
+    background: #002742;
     color: #fffdfc;
     font-family: Alata, Arial, Helvetica, sans-serif;
 }
@@ -36,6 +36,7 @@ select:focus {
     border: none;
     outline: none;
 }
+
 option {
     font-family: Alata, Arial, Helvetica, sans-serif;
     color: black;
@@ -43,7 +44,7 @@ option {
 
 #button1 {
     border: none;
-    background-color: #d19900;
+    background-color: #dba206;
     color: #fffdfc;
     font-size: 18px;
     font-family: Alata, Arial, Helvetica, sans-serif;
@@ -52,59 +53,71 @@ option {
     padding-bottom: 10px;
     border-radius: 5px;
     transition:background-color 0.1s;
-    display: inline;
+    
     right:0%;
     width: 100%;
-    margin: auto;
+    margin: 10px 0px;
+    
 }
 #button1:hover{
-    background-color: #f0bd32;
+    background-color: #f1bf34;
 }
 #button1:focus {
     outline: none;
     border: none;
 }
-#header{
-    top:0%;
-    
-    border: 5px solid #fffdfc;
-    border-radius: 5px;
-    padding: 10px;
-    width: 98%;
-    display: inline-block;
-    margin:1%;
-    height: 10vh;
-    background: #026380;
-    
-}
+
 #content{
     top:0%;
     margin: auto;
     width: 98%;
-    border: 5px solid #fffdfc;
-    border-radius: 5px;
+    border: none;
+    border-radius: 15px;
     padding: 10px;
     display: inline-block;
+    box-shadow: 10px 10px 22px -3px rgba(0,0,0,0.2);
     
     font-size: 2em;
     margin:1%;
-    background: #026380;
+    background: #00497e;
+    margin-bottom: 10px;
 
 }
-#ads{
-    height: 10vh;
-    width:25%;
-    border: 5px solid #fffdfc;
-    border-radius: 5px;
+#header{
+    top: 0%;
+    border:none;
+    border-radius: 15px;
     padding: 10px;
-    position: relative;
+    width: 98%;
     display: inline-block;
+    margin:1%;
+    
+    background: #00497e;
+    box-shadow: 10px 10px 22px -3px rgba(0,0,0,0.2);
+    font-size: 1em;
+    margin-bottom: 10px;
     
     
 }
+#lower{
+    
+    border:none;
+    border-radius: 15px;
+    padding: 10px;
+    width: 98%;
+    display: inline-block;
+    margin:1%;
+    background: #00497e;
+    box-shadow: 10px 10px 22px -3px rgba(0,0,0,0.2);
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+    
+}
+
 #id_wiadomość{
     width: 100%;
-    height: 8rem;
+    height: 16rem;
     padding:5px;
     border: 2px solid  #fffdfc;
     border-radius: 5px;
@@ -113,8 +126,10 @@ option {
     font-family: Alata, Arial, Helvetica, sans-serif;
     font-size: 18px;
     resize: none;
-    margin:0px;
+    margin-top:10px;
     transition: 0.3s;
+    border-color: #FFFF;
+    /*background-color: #FFFF;*/
     
     
     
@@ -127,20 +142,6 @@ option {
 #id_wiadomość::placeholder {
     color:  #e4e4e4;
 }
-#id_email{
-    display: inline-block;
-    font-family: Alata, Arial, Helvetica, sans-serif;
-    outline:  none;
-    background-color: transparent;
-    color:#fffdfc;
-    font-size: 15px;
-    border: 2px solid #fffdfc;
-    align-items: center;
-    label{
-        padding:2px;
-    }
-    
-}
 #id_płeć{
     display: inline-block;
     background-color: transparent;
@@ -148,7 +149,17 @@ option {
     font-size: 15px;
     color:  #fffdfc;
     font-family: Alata, Arial, Helvetica, sans-serif;
-    label{
-        padding: 2px;
-    }
+    transform: translate(0, -3px);
+    margin: 0px 5px;
+    
+}
+#madeby{
+    float: right;
+    
+    display: inline;
+    font-size: 0.5em;
+    color: #01355a
+}
+#ad{
+    display: inline; 
 }

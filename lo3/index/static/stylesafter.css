@@ -1,15 +1,21 @@
-h1{
+#h1{
     top: 50%;
     right: 50%;
-    
+    font-size: 2em;
     color:#fffdfd;
     position: absolute;
-    transform: translate(50%, -50%);
+    transform: translate(50%, -15%);
+    align-items: center;
+    text-align: center;
+    opacity:0;
+    animation: anim 1s;
+    animation-fill-mode: both;
+    
     
     
 }
 body {
-    background: radial-gradient(circle, rgba(2,99,128,1) 0%, rgba(0,40,52,1) 100%);
+    background: #002742;
     color: #fffdfc;
     font-family: Alata, Arial, Helvetica, sans-serif;
     width: 100%;
@@ -21,8 +27,58 @@ body {
     box-sizing: border-box;
     
 }
-#container{
+
+button{
+    border: none;
+    background-color: #dba206;
+    color: #fffdfc;
+    font-size: 36px;
+    font-family: Alata, Arial, Helvetica, sans-serif;
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition:background-color 0.1s;  
+}
+a {
+    color: #fffdfc;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #f1bf34;
+}
+a:hover{
+    cursor: pointer;
+}
+#arrow{
+    animation: animarr 1s 0.1s;
+    animation-fill-mode: backwards;
+    transition: 0.3s;
+
+    
+}
+#arrow:hover{
+    
+    transform: rotate(70deg);
     
     
+
+}
+@keyframes anim{
+    from {opacity:0;
+        transform: translate(50%, -15%);}
+    to {opacity: 1;
+        transform: translate(50%, -50%);}
+
+
+}
+@keyframes animarr{
+    0% {transform: rotate(0deg); }
+    25%{transform: rotate(-30deg);}
+    50%{transform: rotate(70deg);}
+    75%{transform: rotate(-15deg); }
+    100%{transform: rotate(0deg);}
     
+
 }
