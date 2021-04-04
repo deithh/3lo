@@ -1,8 +1,8 @@
 
 
 # page
-Spotted styled page witch backend in Django!
-try it! http://deith.pythonanywhere.com/
+Spotted styled page witch backend in Django!\n
+Try it! http://deith.pythonanywhere.com/
 # appearance
 ![alt text](https://i.imgur.com/bg2RLI6.png)
 ![alt text](https://i.imgur.com/7gKgBJK.png)
